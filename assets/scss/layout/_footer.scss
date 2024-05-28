@@ -1,0 +1,152 @@
+@use '../foundation/index' as *;
+
+.footer {
+  position: relative;
+  z-index: 2;
+  margin-top: 250rem;
+  padding: 80rem 0;
+  background-color: var(--colorKey);
+  color: #fff;
+
+  @include media() {
+    margin-top: 120rem;
+    padding: 60rem 20rem;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & {
+    @extend %wrapper;
+  }
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 26rem;
+  width: 480rem;
+
+  @include media() {
+    gap: 20rem;
+  }
+}
+
+.footer__address {
+  font-size: 14rem;
+  line-height: 1.64285714;
+
+  @include media() {
+    font-size: 13rem;
+    line-height: 1.53846154;
+  }
+}
+
+.footer__nav {
+  @include media() {
+    margin-top: 30rem;
+    padding-top: 30rem;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+  }
+}
+
+.footer__nav-list {
+  display: flex;
+  gap: 30rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include media() {
+    flex-wrap: wrap;
+    gap: 1em 0;
+  }
+}
+
+.footer__nav-item {
+  @include media() {
+    width: 50%;
+  }
+}
+
+.footer__nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__nav-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27rem;
+
+  @include media() {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 8rem 20rem;
+    width: 100vw;
+    background-color: var(--colorKey);
+    opacity: 0;
+    transition: opacity .3s;
+    pointer-events: none;
+
+    .is-cvshow & {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  .footer__nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230rem;
+    height: 51rem;
+    border-radius: 6rem;
+    background-color: #fff;
+    color: var(--colorKey);
+    font-size: 15rem;
+
+    @include media() {
+      width: 160rem;
+      height: 37rem;
+    }
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80rem;
+  width: 100%;
+
+  @include media() {
+    flex-direction: column-reverse;
+    margin-top: 60rem;
+  }
+}
+
+.footer__copyright {
+  color: #91a3bf;
+  font-size: 13rem;
+
+  @include media() {
+    margin-top: 20rem;
+    font-size: 12rem;
+  }
+}
+
+.footer__bottom-nav-list {
+  display: flex;
+  gap: 30rem;
+  font-size: 13rem;
+
+  @include media() {
+    gap: 40rem;
+    font-size: 12rem;
+  }
+}

@@ -1,0 +1,25 @@
+// Utility = 強制的に上書きするコード
+
+@use '../foundation/index' as *;
+
+
+.pc-none {
+  @include media(pc_only) {
+    display: none !important;
+  }
+}
+
+.sp-none {
+  @include media() {
+    display: none !important;
+  }
+}
+
+
+// swiper上書き
+.js__member-swiper,
+.js__member-swiper-reverse {
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+}

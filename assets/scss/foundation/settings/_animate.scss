@@ -1,0 +1,80 @@
+@use '../index' as *;
+
+@keyframes blur_mv-top {
+  0% {
+    opacity: 0;
+    filter: blur(100px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+@keyframes opacity_mv-top {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero {
+  &__logo,
+  &::after,
+  &__bg::before {
+    // opacity: 0;
+    animation-name: blur_mv-top;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+    animation-fill-mode: forwards;
+  }
+}
+
+.hero__subtitle {
+  opacity: 0;
+  animation-name: opacity_mv-top;
+  animation-duration: .25s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+
+  animation-fill-mode: forwards;
+  // @include media() {
+  //   animation-delay: 2.4s;
+  // }
+}
+
+.hero__button {
+  opacity: 0;
+  animation-name: fade-up;
+  animation-duration: .25s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+
+  animation-fill-mode: forwards;
+}

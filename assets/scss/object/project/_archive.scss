@@ -1,0 +1,40 @@
+@use '../../foundation/index' as *;
+
+/* お知らせ */
+.notice {
+  padding: 2rem 1rem;
+}
+
+.notice__title {
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background-color: #004a99;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.notice__inner {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.notice__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.notice__item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.notice__date {
+  margin-bottom: .5rem;
+  color: #6c757d;
+  font-size: .875rem;
+}
+
+.notice__text {
+  font-size: 1rem;
+}
