@@ -3,14 +3,18 @@
 .footer {
   position: relative;
   z-index: 2;
-  margin-top: 250rem;
+  margin-top: 160rem;
   padding: 80rem 0;
   background-color: var(--colorKey);
   color: #fff;
 
   @include media() {
-    margin-top: 120rem;
+    margin-top: 120rem !important;
     padding: 60rem 20rem;
+  }
+
+  .home & {
+    margin-top: 250rem;
   }
 }
 

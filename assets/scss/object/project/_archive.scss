@@ -2,20 +2,17 @@
 
 /* お知らせ */
 .notice {
-  padding: 2rem 1rem;
-}
-
-.notice__title {
-  margin-bottom: 2rem;
-  padding: 1rem 2rem;
-  background-color: #004a99;
-  color: #fff;
-  font-size: 1.5rem;
+  margin-top: 60rem;
 }
 
 .notice__inner {
-  margin: 0 auto;
-  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 816rem;
+
+  @include media() {
+    width: 335rem;
+  }
 }
 
 .notice__list {
@@ -25,16 +22,29 @@
 }
 
 .notice__item {
-  padding: 1rem 0;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 30rem 0 26rem;
+  border-bottom: 1px solid #cecece;
+
+  @include media() {
+    padding: 25rem 10rem 26rem;
+  }
+
+  &:first-child {
+    border-top: 1px solid #cecece;
+  }
 }
 
 .notice__date {
-  margin-bottom: .5rem;
-  color: #6c757d;
-  font-size: .875rem;
+  margin-bottom: 4rem;
+  color: var(--colorKey);
+  font-family: var(--fontTitle);
+  line-height: 1;
+
+  @include media() {
+    margin-bottom: 10rem;
+  }
 }
 
 .notice__text {
-  font-size: 1rem;
+  line-height: 1.8125;
 }

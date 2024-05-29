@@ -1,15 +1,15 @@
 <?php get_header(); ?>
 
 <main class="main">
-	<h2 class="notice__title">お知らせ</h2>
+	<h2 class="page__title"><?php post_type_archive_title(); ?></h2>
 
-	<section class="breadcrumb">
+	<div class="breadcrumb">
 		<div class="breadcrumb__inner">
 			<a href="<?php echo home_url(); ?>" class="breadcrumb__link">TOP</a> &gt; <span class="breadcrumb__current"><?php post_type_archive_title(); ?></span>
 		</div>
 
 		<!-- /.breadcrumb__inner -->
-	</section>
+	</div>
 	<!-- /.breadcrumb -->
 
 	<section class="notice">

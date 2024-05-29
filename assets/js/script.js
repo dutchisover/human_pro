@@ -1,3 +1,21 @@
+////////////////// URLを取得し、リンクをハイライトする //////////////////
+document.addEventListener('DOMContentLoaded', () => {
+  const currentURL = window.location.pathname;
+
+  const navItems = document.querySelectorAll('.header__nav-item');
+
+  navItems.forEach(item => {
+    const anchor = item.querySelector('a');
+    if (
+      anchor &&
+      anchor.dataset.current &&
+      currentURL.includes(anchor.dataset.current)
+    ) {
+      item.classList.add('is-current');
+    }
+  });
+});
+
 ////////////////// メニュークリックでヘッダーを開きボディにオーバーフローを付与 //////////////////
 document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.querySelector('.header__menu');

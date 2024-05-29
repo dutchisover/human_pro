@@ -1,5 +1,162 @@
 @use '../../foundation/index' as *;
 
-.single_main {
-  @extend %block;
+.single__inner {
+  margin-top: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 816rem;
+
+  @include media() {
+    width: 335rem;
+  }
+}
+
+.single__date {
+  padding: 0 18rem;
+  color: #666;
+  font-family: --fontTitle;
+
+  @include media() {
+    padding: 0 10rem;
+  }
+}
+
+.single__title {
+  padding: 0 18rem 35rem;
+  // border-bottom: 1px solid #cecece;
+  color: var(--colorKey);
+  font-weight: 700;
+  font-size: 28rem;
+  line-height: 1.5;
+
+  @include media() {
+    padding: 0 10rem 40rem;
+    font-size: 22rem;
+  }
+}
+
+.single__content {
+  padding: 60rem 18rem;
+  border-top: 1px solid #cecece;
+
+  @include media() {
+    padding: 40rem 10rem;
+  }
+
+  *:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 40rem 0;
+    line-height: 1.8125;
+
+    @include media() {
+      line-height: 1.8;
+    }
+
+    a {
+      color: #006eb8;
+      text-decoration: underline;
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 40rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+    & + p {
+      margin-top: 10rem;
+    }
+  }
+
+  h2 {
+    margin-top: 60rem;
+    font-size: 24rem;
+
+    @include media() {
+      font-size: 20rem;
+    }
+  }
+
+  h3 {
+    font-size: 20rem;
+
+    @include media() {
+      font-size: 18rem;
+    }
+  }
+
+  h4 {
+    font-size: 18rem;
+
+    @include media() {
+      font-size: 16rem;
+    }
+  }
+
+  .wp-block-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40rem 0;
+    font-size: 14rem;
+    line-height: 1.5;
+
+    @include media() {
+      font-size: 12rem;
+    }
+  }
+
+  .wp-block-button {
+    @include media() {
+      width: 100%;
+    }
+  }
+  .wp-block-button__link {
+    position: relative;
+    padding-right: 2.875em;
+    border-radius: 6rem;
+    background-color: #006eb8;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16rem;
+
+    @include media() {
+      width: 100%;
+      text-align: left;
+      font-size: 15rem;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 20rem;
+      display: block;
+      width: 16rem;
+      height: 12rem;
+      background-image: url(../image/arrow_button_right_white.svg);
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+
+      @include media() {
+        right: 15rem;
+        width: 12rem;
+        height: 9rem;
+      }
+    }
+  }
+}
+
+.single__button {
+  display: flex;
+  justify-content: center;
 }

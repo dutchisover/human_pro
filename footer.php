@@ -2,7 +2,7 @@
     	<div class="footer__inner">
     		<div class="footer__info">
     			<div class="footer__logo">
-    				<a href="http://" target="_blank" rel="noopener noreferrer">
+    				<a href="<?php home_url(); ?>">
     					<img src="<?php echo get_template_directory_uri(); ?>/assets/image/logo_footer.svg" alt="PRO" width="480" height="53">
     				</a>
     			</div>
@@ -19,8 +19,8 @@
     			</ul>
 
     			<ul class="footer__nav-button">
-    				<li class="footer__nav-item"><a href="#" target="_blank" rel="noopener noreferrer">PRO認定の申請</a></li>
-    				<li class="footer__nav-item"><a href="#" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
+    				<li class="footer__nav-item"><a href="<?php home_url(); ?>/app">PRO認定の申請</a></li>
+    				<li class="footer__nav-item"><a href="<?php home_url(); ?>/contact">お問い合わせ</a></li>
     			</ul>
     		</div>
 
@@ -29,7 +29,6 @@
 
     			<div class="footer__bottom-nav">
     				<ul class="footer__bottom-nav-list">
-    					<li class="footer__bottom-nav-item"><a href="<?php home_url(); ?>/aoi">定款</a></li>
     					<li class="footer__bottom-nav-item"><a href="<?php home_url(); ?>/privacy">プライバシーポリシー</a></li>
     				</ul>
     			</div>

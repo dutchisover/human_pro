@@ -41,15 +41,15 @@
 					</div>
 
 					<ul class="header__nav-list">
-						<li class="header__nav-item"><a href="<?php home_url(); ?>/examination">審査について</a></li>
-						<li class="header__nav-item"><a href="<?php home_url(); ?>admission/">入会案内</a></li>
-						<li class="header__nav-item"><a href="<?php home_url(); ?>/authorize">認定一覧</a></li>
-						<li class="header__nav-item"><a href="<?php home_url(); ?>/about">法人概要</a></li>
-						<li class="header__nav-item"><a href="<?php home_url(); ?>/news">お知らせ</a></li>
+						<li class="header__nav-item"><a href="<?php home_url(); ?>/examination" data-current="examination">審査について</a></li>
+						<li class="header__nav-item"><a href="<?php home_url(); ?>/admission" data-current="admission">入会案内</a></li>
+						<li class="header__nav-item"><a href="<?php home_url(); ?>/authorize" data-current="authorize">認定一覧</a></li>
+						<li class="header__nav-item"><a href="<?php home_url(); ?>/about" data-current="about">法人概要</a></li>
+						<li class="header__nav-item"><a href="<?php home_url(); ?>/news" data-current="news">お知らせ</a></li>
 						<li class="header__nav-button">
 							<ul>
-								<li class="header__nav-item"><a href="<?php home_url(); ?>/" target="_blank" rel="noopener noreferrer">PRO認定の申請</a></li>
-								<li class="header__nav-item"><a href="<?php home_url(); ?>/" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
+								<li class="header__nav-item"><a href="<?php home_url(); ?>/app" data-current="app">PRO認定の申請</a></li>
+								<li class="header__nav-item"><a href="<?php home_url(); ?>/contact" data-current="contact">お問い合わせ</a></li>
 							</ul>
 						</li>
 					</ul>
