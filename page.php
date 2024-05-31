@@ -1,7 +1,13 @@
 <?php get_header(); ?>
 
+<?php
+// ページのスラッグを取得
+global $post;
+$slug = $post->post_name;
+?>
+
 <main class="main">
-	<h2 class="page__title"><?php the_title(); ?></h2>
+	<h2 class=" page__title"><?php the_title(); ?></h2>
 
 	<div class="breadcrumb">
 		<div class="breadcrumb__inner">
@@ -24,12 +30,13 @@
 		</div>
 	<?php
 	} else {
-		// Default loop for other pages
+		echo '<div class="page-' . esc_attr($slug) . '">';
 		if (have_posts()) :
 			while (have_posts()) : the_post();
 				the_content();
 			endwhile;
 		endif;
+		echo '</div>';
 	}
 	?>
 

@@ -1,0 +1,91 @@
+@use '../../foundation/index' as *;
+
+.page-authorize {
+  margin-top: 80rem;
+
+  @extend %wrapper;
+  @include media() {
+    width: 335rem;
+  }
+}
+
+.wp-block-flexible-table-block-table {
+  &.wp-block-flexible-table-block-table {
+    margin-top: 50rem;
+
+    table {
+      tr {
+        th,
+        td {
+          border: 1px solid #cecece;
+          text-align: center;
+        }
+      }
+      thead th {
+        padding: 18rem;
+        background-color: #f7f8fa;
+        font-weight: 400;
+
+        @include media() {
+          padding: 20rem;
+          font-size: 14rem;
+        }
+
+        &:first-child {
+          width: 306rem;
+          border-left: 0;
+
+          @include media() {
+            width: 123rem;
+          }
+        }
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+      tbody {
+        td {
+          border-left: 0;
+          font-weight: 700;
+          font-size: 18rem;
+
+          @include media() {
+            padding-right: 20rem;
+            padding-left: 0;
+            text-align: left;
+            font-size: 15rem;
+            line-height: 1.46666667;
+          }
+
+          &:last-child {
+            padding: 18rem 40rem;
+            border-right: 0;
+            text-align: left;
+            font-weight: 400;
+            font-size: 16rem;
+
+            @include media() {
+              padding: 20rem;
+              padding-right: 0;
+              font-size: 15rem;
+            }
+
+            a {
+              color: #006eb8;
+              text-decoration: underline;
+            }
+          }
+
+          br {
+            display: none;
+
+            @include media() {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

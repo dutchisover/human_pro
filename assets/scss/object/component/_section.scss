@@ -1,0 +1,55 @@
+@use '../../foundation/index' as *;
+
+// セクション
+.section {
+  position: relative;
+}
+
+.section__title {
+  color: var(--colorTitle);
+  font-weight: 300;
+  font-size: 70rem;
+  font-family: var(--fontTitle);
+  line-height: 1;
+
+  @include media() {
+    font-size: 53rem;
+  }
+}
+
+.section__line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  overflow: hidden;
+  width: 100vw;
+  // height: 100%;
+  transform: translateX(-50%);
+
+  // @media (min-width: 1400px) {
+  //   width: 100vw;
+  // }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: .4s;
+
+    .is-show & {
+      transform: translateY(100%);
+    }
+  }
+
+  img {
+    max-width: none;
+    width: 100%;
+    height: auto;
+  }
+}

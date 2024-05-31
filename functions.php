@@ -118,3 +118,58 @@ function custom_pagination($max_num_pages, $range = 2, $paged)
 		'mid_size' => $range
 	));
 }
+
+
+
+function register_custom_image_block()
+{
+	// ACF ブロックを登録
+	acf_register_block_type(array(
+		'name'              => 'custom-image-block',
+		'title'             => __('Custom Image Block'),
+		'description'       => __('PCとスマホの画像を切り替えるブロックです。'),
+		'render_callback'   => 'render_custom_image_block',
+		'category'          => 'formatting',
+		'icon'              => 'format-image',
+		'keywords'          => array('image', 'responsive', 'custom'),
+		'supports'          => array(
+			'align' => false
+		),
+	));
+}
+
+// レンダリングコールバック関数を読み込み
+require get_template_directory() . '/template-parts/blocks/image-switcher.php';
+
+add_action('acf/init', 'register_custom_image_block');
+
+
+
+////////////////// SVGファイルをアップロード可能にする //////////////////
+function add_svg_to_upload_mimes($mimes)
+{
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'add_svg_to_upload_mimes');
+
+function fix_svg()
+{
+	echo '<style>
+        .attachment-266x266, .thumbnail img {
+            width: 100% !important;
+            height: auto !important;
+        }
+    </style>';
+}
+add_action('admin_head', 'fix_svg');
+
+function check_for_svg($file)
+{
+	$filetype = wp_check_filetype($file['name']);
+	if ($filetype['ext'] === 'svg') {
+		$file['type'] = 'image/svg+xml';
+	}
+	return $file;
+}
+add_filter('wp_check_filetype_and_ext', 'check_for_svg', 10, 4);

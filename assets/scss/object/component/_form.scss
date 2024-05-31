@@ -1,0 +1,147 @@
+@use '../../foundation/index' as *;
+
+
+// フォーム
+.page-form {
+  margin-top: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 800rem;
+
+  @include media() {
+    margin-top: 60rem;
+    width: 335rem;
+  }
+
+  p.has-text-align-center:first-child {
+    @include media() {
+      text-align: left !important;
+    }
+  }
+
+  .form__step {
+    display: flex;
+    justify-content: center;
+    margin: 80rem auto 100rem;
+
+    @include media() {
+      margin: 60rem auto 60rem;
+    }
+
+    img {
+      width: 515rem;
+    }
+  }
+
+  a {
+    color: #006eb8;
+    text-decoration: underline;
+  }
+
+  p + p {
+    margin-top: 40rem;
+
+    @include media() {
+      margin-top: 30rem;
+    }
+  }
+
+  label {
+    line-height: 1.5;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    margin-top: 14rem;
+    padding: 15rem 20rem;
+    width: 100%;
+    border: 1px solid #cecece;
+    border-radius: 10rem;
+    font-weight: 400;
+    font-size: 18rem;
+    line-height: 1.5;
+
+    @include media() {
+      margin-top: 10rem;
+      font-size: 16rem;
+    }
+
+    &::placeholder {
+      color: #cecece;
+    }
+  }
+
+  textarea {
+    height: 347rem;
+
+    @include media() {
+      height: 332rem;
+    }
+  }
+}
+
+.form__confirm {
+  display: inline-block;
+  margin-left: 10rem;
+  padding: 2rem 0;
+  width: 36rem;
+  background-color: #e53232;
+  color: #fff;
+  text-align: center;
+  font-size: 13rem;
+}
+
+.form__privacy {
+  text-align: center;
+  font-size: 13rem;
+  line-height: 2.07692308;
+
+  @include media() {
+    text-align: left;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 60rem;
+
+  @include media() {
+    margin-top: 30rem;
+  }
+
+  input {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.wpcf7-list-item {
+  margin-left: 40rem;
+
+  @include media() {
+    margin-top: 1em;
+    margin-left: 0;
+  }
+
+  &.first {
+    margin-left: 0;
+  }
+}
+
+.wpcf7-list-item-label::before {
+  width: 10rem;
+}
+
+.wpcf7-radio {
+  @include media() {
+    display: flex;
+    flex-direction: column;
+  }
+}
