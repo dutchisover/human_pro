@@ -125,3 +125,14 @@ gsap.to(document.body, {
     onLeave: () => document.body.classList.remove('is-cvshow')
   }
 });
+
+////////////////// アコーディオンをトグルする //////////////////
+document.addEventListener('DOMContentLoaded', () => {
+  const accordions = document.querySelectorAll('.js_accordion');
+
+  accordions.forEach(accordion => {
+    accordion.addEventListener('click', () => {
+      accordion.classList.toggle('is-open');
+    });
+  });
+});

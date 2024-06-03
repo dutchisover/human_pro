@@ -29,7 +29,7 @@
 
     			<div class="footer__bottom-nav">
     				<ul class="footer__bottom-nav-list">
-    					<li class="footer__bottom-nav-item"><a href="<?php home_url(); ?>/privacy">プライバシーポリシー</a></li>
+    					<li class="footer__bottom-nav-item"><a href="<?php home_url(); ?>/privacy">個人情報利用規約</a></li>
     				</ul>
     			</div>
     		</div>

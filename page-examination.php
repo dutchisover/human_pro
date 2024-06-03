@@ -143,7 +143,7 @@
 					<div class="page-examination__step-arrow-content">
 						<p>申請フォームに必要項目を入力いただき申請してください。</p>
 						<div class="page-examination__button">
-							<a href="#" class="button--primary" target="_blank" rel="noopener noreferrer">申請フォーム</a>
+							<a href="<?php home_url(); ?>/contact" class="button--primary">申請フォーム</a>
 						</div>
 					</div>
 				</div>
@@ -173,7 +173,7 @@
 		<!-- /.page-examination__content-box -->
 
 		<div class="page-examination__content-box" id="anc-merit">
-			<h2 class="page-examination__content-title page__content-title">PROの認定を受けるメリット</h2>
+			<h2 class="page-examination__content-title page__content-title">PRO認定を受けるメリット</h2>
 			<p class="page-examination__merit-text-sp pc-none">どうすれば“教育”による豊かな社会を実現できるかを考慮し、学習者、社会、環境に対する長期的かつ総合的な利益を追求するための基準を設けて審査を行います。</p>
 			<div class="page-examination__merit">
 				<div class="page-examination__merit-item">
@@ -198,31 +198,31 @@
 			<h2 class="page-examination__content-title page__content-title">申請サポート</h2>
 			<p class="page-examination__support-desc">申請にあたり、よくあるご質問を掲載しております。</p>
 			<div class="page-examination__support-container">
-				<div class="page-examination__support-item">
+				<div class="page-examination__support-item js_accordion">
 					<div class="page-examination__support-wrapper">
 						<h3 class="page-examination__support-question">申請対象について詳しく教えてください。</h3>
 						<p class="page-examination__support-answer">PRO認定は、”教育”を評価・認定する仕組みです。団体の種類や教育のカテゴリを問わず、すべての教育プログラムが申請対象となります。</p>
 					</div>
 				</div>
-				<div class="page-examination__support-item">
+				<div class="page-examination__support-item js_accordion">
 					<div class="page-examination__support-wrapper">
 						<h3 class="page-examination__support-question">児童向けの教育を提供していて、審査基準の「雇用機会の創出」を満たしていません。</h3>
 						<p class="page-examination__support-answer">豊かな社会を実現するための、学習者の能力向上と労働市場に寄与する”質の高い教育プログラムを提供しているか”が審査基準となります。学習者によって、審査基準をすべて満たす必要はありません。</p>
 					</div>
 				</div>
-				<div class="page-examination__support-item">
+				<div class="page-examination__support-item js_accordion">
 					<div class="page-examination__support-wrapper">
 						<h3 class="page-examination__support-question">PRO認定マークの効果は？</h3>
 						<p class="page-examination__support-answer">PRO認定マークは、質の高い教育を提供している証となります。PRO認定された団体はこの認定マークをホームページ等に掲載し、販促活動に利用できます。</p>
 					</div>
 				</div>
-				<div class="page-examination__support-item">
+				<div class="page-examination__support-item js_accordion">
 					<div class="page-examination__support-wrapper">
 						<h3 class="page-examination__support-question">申請は有料ですか？</h3>
 						<p class="page-examination__support-answer">申請は無料となりますが、PRO認定は、賛助会員の中から当機構の正会員によって評価・認定されます。よってPRO認定を受けるためには賛助会員である必要があります。詳しくは<a href="#">こちら</a>をご覧ください。</p>
 					</div>
 				</div>
-				<div class="page-examination__support-item">
+				<div class="page-examination__support-item js_accordion">
 					<div class="page-examination__support-wrapper">
 						<h3 class="page-examination__support-question">PRO認定を受けるのは難しいですか？</h3>
 						<p class="page-examination__support-answer">立ち上げたばかりで実績が少ない団体の場合は、一度の申請で認定を受けることは難しいかもしれません。認定を見送る場合は、理由を添えて審査結果をお伝えしますので、次回の申請時に参考にしてみてください。</p>

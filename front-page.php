@@ -81,57 +81,72 @@
 			</picture>
 		</div>
 
+		<h2 class="about__title section__title">ABOUT</h2>
+		<p class="about__subtitle">PROは、”教育”で<br class="pc-none">豊かな社会を実現します。</p>
+		<p class="about__text">PRO（職業技能専門教育研究機構）は、職業技能や専門教育の調査、研究、人材の育成、教育プログラムの認定等を通じて、学習者の職業能力の向上と雇用機会の創出を目指し、広く公益に貢献することを目的に活動を行っています。</p>
+
 		<div class="about__inner">
 			<div class="about__info">
-				<h2 class="about__title section__title">ABOUT</h2>
-				<p class="about__subtitle">PROは、<br>“教育”で豊かな社会を<br>実現するための<br>活動をしています。</p>
-				<p class="about__text">私たちは、職業技能と専門教育の関係を研究し、<br>企業と教育機関における技能評価のガイドラインを策定し、<br class="sp-none">それをもとに“教育”の評価・認証を行っています。</p>
-				<p class="about__text">技能習得と労働環境のバランスを安定化する取り組みを<br class="sp-none">通じて、”教育”によって豊かな社会を実現します。</p>
+				<h3 class="top-section__title">PRO認定とは？</h3>
+				<p class="top-section__text">PROは、学習者の技能習得と労働環境のバランスを安定させるために、第三者機関が提供する教育プログラムの評価ガイドラインを策定し、審査・認定を行っています。これにより、質の高い教育を提供し、学習者が必要な技能を身につけることを支援しています。</p>
 				<a href="<?php home_url(); ?>/examination" class="about__button button--primary">審査について</a>
 			</div>
 
 			<div class="about__illust">
 				<picture>
 					<source media=" (max-width:768px)" srcset="<?= get_template_directory_uri(); ?>/assets/image/illust_about_sp.svg">
-					<img src="<?= get_template_directory_uri(); ?>/assets/image/illust_about.svg" alt="【仕事のハードスキル習得評価基準】・専門知識と技術力・コミュニケーションスキル・問題解決能力・プロジェクト管理スキル・学習意欲と柔軟性　【就業者の労働環境 評価基準】・労働時間とワークライフバランス・職場のコミュニケーションと協力・ダイバーシティとインクルージョン・キャリア開発のサポート・福利厚生と健康管理" class="about__image" width="532" height="514">
+					<img src="<?= get_template_directory_uri(); ?>/assets/image/illust_about.svg" alt="【技能取得】・時代性のある教育プログラムである　・適切なカリキュラムと教材が提供されている　・評価とフィードバック　【キャリア開発】・適切な学習サポート　・キャリアサポートの提供　・雇用機会の創出" class="about__image" width="482" height="466">
 				</picture>
 			</div>
 		</div>
 
 		<div class="apply top-section">
-			<h2 class="apply__title top-section__title">申請いただける対象</h2>
+			<h2 class="apply__title top-section__title">申請対象となる団体</h2>
+			<p class="top-section__text">各種団体が提供している教育プログラム（検定、資格、講座等）について、審査を行います。</p>
 			<div class="apply__categories">
 				<div class="apply__category">
 					<p class="apply__name">検定・資格<br class="pc-none">主催団体</p>
 					<img class="apply__image" src="<?php echo get_template_directory_uri(); ?>/assets/image/icon_top-apply_01.svg" alt="検定・資格主催団体">
 				</div>
 				<div class="apply__category">
-					<p class="apply__name">人材会社</p>
-					<img class="apply__image" src="<?php echo get_template_directory_uri(); ?>/assets/image/icon_top-apply_02.svg" alt="人材会社">
+					<p class="apply__name">企業</p>
+					<img class="apply__image" src="<?php echo get_template_directory_uri(); ?>/assets/image/icon_top-apply_02.svg" alt="企業">
 				</div>
 				<div class="apply__category">
-					<p class="apply__name">教育機関<span>（専門学校、技能スクール）</span></p>
+					<p class="apply__name">教育事業者</p>
 					<img class="apply__image" src="<?php echo get_template_directory_uri(); ?>/assets/image/icon_top-apply_03.svg" alt="教育機関（専門学校、技能スクール）">
 				</div>
 			</div><!-- /.apply__categories -->
+
+			<div class="apply__button">
+				<a href="<?php home_url(); ?>/examination" class="about__button button--primary">申請対象について</a>
+			</div>
 		</div><!-- /.apply -->
 
 		<!-- mark -->
 		<div class="mark top-section">
 			<h2 class="mark__title top-section__title">PRO認定マーク</h2>
+			<p class="top-section__text">PRO認定された団体は団体マーク、PRO認定の教育プログラムを修了された個人の方は個人マークを各種活動に使用いただけます。</p>
 			<div class="mark__list">
 				<div class="mark__item">
 					<img src="<?= get_template_directory_uri(); ?>/assets/image/logo_mark_01.png" alt="正会員マーク" width="306" height="306">
-					<p class="mark__item-title">正会員<br class="pc-none">マーク</p>
+					<p class="mark__item-title">団体マーク</p>
 				</div>
-				<div class="mark__item">
-					<img src="<?= get_template_directory_uri(); ?>/assets/image/logo_mark_02.png" alt="賛助会員マーク" width="306" height="306">
-					<p class="mark__item-title">賛助会員<br class="pc-none">マーク</p>
+				<div class="mark__container">
+					<div class="mark__info">
+						<p class="mark__info-title">PRO認定の教育プログラムを<br>修了された個人の方へ</p>
+						<p class="mark__info-text">名刺等に使用いただける個人マークを提供しています。詳しくはお問い合わせください。</p>
+					</div>
+					<div class="mark__info-image">
+						<img src="<?= get_template_directory_uri(); ?>/assets/image/logo_mark_02.png" alt="個人マーク" width="306" height="306">
+						<p class="mark__info-caption">個人マーク</p>
+					</div>
 				</div>
-				<div class="mark__item">
+
+				<!-- <div class="mark__item">
 					<img src="<?= get_template_directory_uri(); ?>/assets/image/logo_mark_03.png" alt="個人マーク" width="306" height="306">
 					<p class="mark__item-title">個人<br class="pc-none">マーク</p>
-				</div>
+				</div> -->
 			</div>
 			<div class="mark__button">
 				<a href="<?php home_url(); ?>admission/" class="button--primary">入会案内</a>
@@ -153,6 +168,15 @@
 		<!-- member -->
 		<div class="member">
 			<div class="member__inner">
+				<h3 class="member__title">PRO認定</h3>
+
+				<div class="member__banner">
+					<div class="member__banner-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/banner_member_02.png" alt="会員ロゴ1"></div>
+
+					<div class="member__banner-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/banner_member_11.png" alt="会員ロゴ1"></div>
+				</div>
+
+				<?php /*
 				<h3 class="member__title">正会員</h3>
 				<div class="swiper-container js__member-swiper">
 					<div class="swiper-wrapper member__list">
@@ -186,6 +210,7 @@
 						<div class="swiper-slide member__item"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/banner_member_10.png" alt="会員ロゴ5"></div>
 					</div><!-- /.member__list -->
 				</div><!-- /.swiper-container -->
+				*/ ?>
 
 				<div class="member__button">
 					<a href="<?php home_url(); ?>/authorize" class="button">認定一覧</a>
