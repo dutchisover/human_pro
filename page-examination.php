@@ -33,7 +33,7 @@
 			<h2 class="page-examination__content-title page__content-title">審査について</h2>
 			<p class="page-examination__content-text">どうすれば“教育”による豊かな社会を実現できるかを考慮し、学習者、社会、環境に対する長期的かつ総合的な利益を追求するための基準を設けて審査を行います。</p>
 
-			<h3 class="page-examination__content-subtitle">申請対象となる団体</h3>
+			<h3 class="page-examination__content-subtitle page__subtitle">申請対象となる団体</h3>
 			<div class="page-examination__group">
 				<div class="page-examination__group-item">
 					<div class="page-examination__item-heading">
@@ -76,7 +76,7 @@
 		<!-- /.page-examination__content-box -->
 
 		<div class="page-examination__content-box">
-			<h3 class="page-examination__content-subtitle">審査基準</h3>
+			<h3 class="page-examination__content-subtitle page__subtitle">審査基準</h3>
 			<div class="page-examination__standard">
 				<div class="page-examination__standard-item">
 					<div class="page-examination__standard-heading">
