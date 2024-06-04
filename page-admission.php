@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="page__admission page__main">
 
 	<h1 class="page__title"><?php the_title(); ?></h1>
 
@@ -13,7 +13,7 @@
 	<!-- /.breadcrumb -->
 
 
-	<div class="page__content">
+	<div class="page__content page-admission__content">
 		<section class="page-admission__content-box">
 			<h2 class="page__content-title">会員について</h2>
 			<p class="page-admission__membership-desc">PRO認定は、賛助会員の中から当機構の正会員によって評価・認定されます。</p>

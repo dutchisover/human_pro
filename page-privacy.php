@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="main page__privacy page__main">
 
 	<h1 class="page__title"><?php the_title(); ?></h1>
 
@@ -42,7 +42,7 @@
 		</div>
 
 		<p class="page-privacy__revision-date">[最終改訂日：2024年4月1日]</p>
-		
+
 		<div class="page-privacy__contact-info">
 			<h3 class="page-privacy__info-heading">【個人情報に関するお問い合わせ先】</h3>
 			<p>職業技能専門教育研究機構　事務局</p>

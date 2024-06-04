@@ -88,6 +88,10 @@ $wrapper: (
 
 
 
+@function vwp($fontSize: 16, $boardSize: $board) {
+  @return #{math.div($fontSize * 100, $boardSize)}vw;
+}
+
 
 // 行間の上下余白を消しながら line-height を設定する
 $line_height: var(--lineHeight);

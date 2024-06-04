@@ -5,6 +5,7 @@
 
   @extend %wrapper;
   @include media() {
+    margin-top: 60rem;
     width: 335rem;
   }
 }

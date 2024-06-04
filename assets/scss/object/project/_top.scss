@@ -14,6 +14,10 @@
   @include media() {
     height: 700rem;
   }
+  @media (min-width: 1401px) {
+    height: auto;
+    aspect-ratio: 1400 / 1082;
+  }
 
   &::before {
     content: '';
@@ -35,6 +39,10 @@
       height: 700rem;
       background-image: url('../image/bg_mv-top_sp.svg');
     }
+
+    @media (min-width: 1401px) {
+      background-size: 100% 100%;
+    }
   }
 }
 
@@ -47,6 +55,11 @@
   width: 100%;
   height: 795rem;
   // height: 1082rem;
+
+  @media (min-width: 1401px) {
+    height: auto;
+    aspect-ratio: 1400 / 795;
+  }
 
   &::before {
     content: '';
@@ -66,6 +79,11 @@
     @include media() {
       height: 590rem;
       background-image: url('../image/bg_mv-top_sp.jpg');
+    }
+
+    @media (min-width: 1401px) {
+      height: 100%;
+      background-size: 100% 100%;
     }
   }
 }
@@ -93,6 +111,20 @@
     width: 100%;
     transform: none;
   }
+
+  @media (min-width: 1401px) {
+    top: vwp(179);
+    right: vwp(43);
+    width: vwp(1077);
+    height: vwp(352.02);
+    transform: none;
+
+    img {
+      max-width: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .hero__inner {
@@ -106,6 +138,13 @@
     margin-top: 170rem;
     margin-right: 20rem;
     margin-left: 20rem;
+    transform: none;
+  }
+
+  @media (min-width: 1401px) {
+    margin-top: vwp(230);
+    padding-left: vwp(120);
+    width: 100%;
     transform: none;
   }
 
@@ -124,6 +163,10 @@
   @include media() {
     font-size: 28rem;
   }
+
+  @media (min-width: 1401px) {
+    font-size: vwp(42);
+  }
 }
 
 .hero__subtitle {
@@ -135,6 +178,10 @@
 
   @include media() {
     font-size: 20rem;
+  }
+
+  @media (min-width: 1401px) {
+    font-size: vwp(40);
   }
 }
 
@@ -171,6 +218,10 @@
     margin-top: -110rem;
     padding: 124rem 20rem;
   }
+
+  @media (min-width: 1401px) {
+    margin-top: -20.6vw;
+  }
 }
 
 .news__line {
@@ -178,6 +229,11 @@
 
   @include media() {
     height: 110rem;
+  }
+
+  @media (min-width: 1401px) {
+    height: auto;
+    aspect-ratio: 1400 / 287;
   }
 
   &::before {

@@ -12,7 +12,7 @@
 			</h1>
 			<p class="hero__subtitle">Skill × Education = Enriched Society</p>
 			<div class="hero__button">
-				<a href="#" class="button" target="_blank" rel="noopener noreferrer">PRO認定の申請</a>
+				<a href="<?php home_url(); ?>/app" class="button">PRO認定の申請</a>
 			</div>
 		</div><!-- /.hero__inner -->
 
@@ -238,7 +238,7 @@
 				<p class="contact__text">ご不明点があればお気軽にお問い合わせください。</p>
 			</div>
 			<div class="contact__button">
-				<a href="#" class="button--primary" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+				<a href="<?php home_url(); ?>/contact" class="button--primary">お問い合わせ</a>
 			</div>
 		</div>
 	</section><!-- /.contact -->

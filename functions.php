@@ -173,3 +173,21 @@ function check_for_svg($file)
 	return $file;
 }
 add_filter('wp_check_filetype_and_ext', 'check_for_svg', 10, 4);
+
+
+
+////////////////// メールチェック //////////////////
+function custom_email_validation_filter($result, $tag)
+{
+	$tag = new WPCF7_FormTag($tag);
+	if ($tag->name === 'email-check') {
+		$your_email = isset($_POST['email-input']) ? trim($_POST['email-input']) : '';
+		$your_email_confirm = isset($_POST['email-check']) ? trim($_POST['email-check']) : '';
+		if ($your_email !== $your_email_confirm) {
+			$result->invalidate($tag, "メールアドレスが違います");
+		}
+	}
+	return $result;
+}
+add_filter('wpcf7_validate_email*', 'custom_email_validation_filter', 20, 2);
+add_filter('wpcf7_validate_email', 'custom_email_validation_filter', 20, 2);

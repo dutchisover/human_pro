@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="page-examination">
+<main class="page-examination page__main">
 
 	<h1 class="page__title"><?php the_title(); ?></h1>
 
@@ -219,7 +219,7 @@
 				<div class="page-examination__support-item js_accordion">
 					<div class="page-examination__support-wrapper">
 						<h3 class="page-examination__support-question">申請は有料ですか？</h3>
-						<p class="page-examination__support-answer">申請は無料となりますが、PRO認定は、賛助会員の中から当機構の正会員によって評価・認定されます。よってPRO認定を受けるためには賛助会員である必要があります。詳しくは<a href="#">こちら</a>をご覧ください。</p>
+						<p class="page-examination__support-answer">申請は無料となりますが、PRO認定は、賛助会員の中から当機構の正会員によって評価・認定されます。よってPRO認定を受けるためには賛助会員である必要があります。詳しくは<a href="<?php home_url(); ?>/admission">こちら</a>をご覧ください。</p>
 					</div>
 				</div>
 				<div class="page-examination__support-item js_accordion">
@@ -231,7 +231,7 @@
 			</div>
 			<p class="page-examination__support-text">その他のご質問や、ご不明点があればお気軽にお問い合わせください。</p>
 			<div class="page-examination__contact-button">
-				<a href="#" class="button--primary" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+				<a href="<?php home_url(); ?>/contact" class="button--primary">お問い合わせ</a>
 			</div>
 		</div>
 		<!-- /.page-examination__content-box -->

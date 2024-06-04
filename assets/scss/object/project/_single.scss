@@ -12,9 +12,10 @@
 }
 
 .single__date {
+  margin-bottom: .5em;
   padding: 0 18rem;
   color: #666;
-  font-family: --fontTitle;
+  font-family: var(--fontTitle);
 
   @include media() {
     padding: 0 10rem;

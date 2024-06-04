@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 
-<main class="main">
-	<h2 class="page__title"><?php echo get_post_type_object(get_post_type())->label; ?></h2>
+<main class="main page__main">
+	<p class="page__title"><?php echo get_post_type_object(get_post_type())->label; ?></p>
 
 	<div class="breadcrumb">
 		<div class="breadcrumb__inner">

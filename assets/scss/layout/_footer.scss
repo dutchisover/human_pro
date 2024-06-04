@@ -9,12 +9,16 @@
   color: #fff;
 
   @include media() {
-    margin-top: 120rem !important;
+    margin-top: 20rem;
     padding: 60rem 20rem;
   }
 
   .home & {
     margin-top: 250rem;
+
+    @include media() {
+      margin-top: 120rem;
+    }
   }
 }
 

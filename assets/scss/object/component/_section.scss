@@ -53,3 +53,11 @@
     height: auto;
   }
 }
+
+
+.page__main {
+  @include media() {
+    display: flex;
+    flex-direction: column;
+  }
+}

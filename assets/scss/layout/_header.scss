@@ -39,14 +39,15 @@
     height: 100dvh;
     background-color: var(--colorKey);
     background-color: rgba(22, 74, 153, .95);
-    // opacity: 0;
+    opacity: 0;
     transition: .4s;
     transform: translateY(-100%);
     pointer-events: none;
 
     .is-open & {
+      opacity: 1;
+      transition: .4s;
       transform: translateY(0);
-      // opacity: 1;
       pointer-events: auto;
     }
   }

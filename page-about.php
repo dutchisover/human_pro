@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="main page__about page__main">
 
 	<h1 class="page__title"><?php the_title(); ?></h1>
 

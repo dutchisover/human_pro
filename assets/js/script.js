@@ -136,3 +136,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // チェックボックスの状態を確認してボタンの状態を更新する関数
+  function updateButtonState() {
+    const checkboxes = document.querySelectorAll(
+      '.form__check input[type="checkbox"]'
+    );
+    const button = document.querySelector('.button--submit');
+
+    // チェックされているチェックボックスが1つでもあるかどうかを確認
+    const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+
+    // チェックされている場合は .is-disabled を削除し、されていない場合は追加
+    if (isChecked) {
+      button.classList.remove('is-disabled');
+    } else {
+      button.classList.add('is-disabled');
+    }
+  }
+
+  // 初期状態を設定
+  updateButtonState();
+
+  // チェックボックスの状態が変更されたときにボタンの状態を更新
+  const checkboxes = document.querySelectorAll(
+    '.form__check input[type="checkbox"]'
+  );
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', updateButtonState);
+  });
+});

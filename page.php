@@ -6,8 +6,8 @@ global $post;
 $slug = $post->post_name;
 ?>
 
-<main class="main">
-	<h2 class=" page__title"><?php the_title(); ?></h2>
+<main class="main page__main">
+	<h1 class=" page__title"><?php the_title(); ?></h1>
 
 	<div class="breadcrumb">
 		<div class="breadcrumb__inner">
@@ -17,7 +17,7 @@ $slug = $post->post_name;
 	</div>
 	<!-- /.breadcrumb -->
 
-	<?php if (is_page(array('contact', 'app'))) { ?>
+	<?php if (is_page(array('contact', 'app', 'confirm', 'send'))) { ?>
 		<!-- フォーム -->
 		<div class="page-form">
 			<?php

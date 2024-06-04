@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main class="main">
-	<h2 class="page__title"><?php post_type_archive_title(); ?></h2>
+<main class="main page__main">
+	<h1 class="page__title"><?php post_type_archive_title(); ?></h1>
 
 	<div class="breadcrumb">
 		<div class="breadcrumb__inner">

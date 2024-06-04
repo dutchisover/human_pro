@@ -1,4 +1,5 @@
 @use '../../foundation/index' as *;
+@use '../component/button' as *;
 
 
 // フォーム
@@ -22,15 +23,23 @@
   .form__step {
     display: flex;
     justify-content: center;
-    margin: 80rem auto 100rem;
+    margin: 80rem auto 0rem;
 
     @include media() {
       margin: 60rem auto 60rem;
+      width: 313rem;
     }
 
     img {
       width: 515rem;
     }
+  }
+
+  .form__step-confirm {
+    @include media() {
+      margin-top: 0;
+      margin-bottom: 0;
+    };
   }
 
   a {
@@ -81,6 +90,14 @@
   }
 }
 
+.wpcf7-form {
+  margin-top: 100rem;
+
+  @include media() {
+    margin-top: 70rem;
+  }
+}
+
 .form__confirm {
   display: inline-block;
   margin-left: 10rem;
@@ -103,6 +120,16 @@
     br {
       display: none;
     }
+  }
+}
+
+.form__check {
+  display: flex;
+  justify-content: center;
+  margin-top: 50rem;
+
+  @include media() {
+    font-size: 13rem;
   }
 }
 
@@ -144,4 +171,176 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+// エラー
+input,
+textarea {
+  &.wpcf7-not-valid {
+    border-color: #e53232 !important;
+    background-color: #fff4f4 !important;
+  }
+}
+
+.wpcf7-not-valid-tip {
+  display: block;
+  margin-top: 10rem;
+  color: #e53232;
+  font-size: 14rem;
+}
+
+
+// 送信ボタンロジック
+.button--submit {
+  transition: .2s;
+
+  & {
+    @extend .button--primary
+  }
+
+  &.is-disabled {
+    background-color: #cecece;
+    cursor: not-allowed;
+
+    &::after {
+      background-image: url(../image/arrow_button-disabled.svg);
+    }
+
+    input {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}
+
+// 確認
+.form__confirm-text {
+  margin-top: 60rem;
+  font-size: 18rem;
+
+  @include media() {
+    margin-top: 40rem;
+    font-size: 15rem;
+  }
+}
+
+.wpcf7-form.init {
+  margin-top: 50rem;
+}
+
+.form__confirm-label {
+  display: block;
+  margin-top: 12rem;
+  font-size: 18rem;
+  line-height: 1.66666667;
+
+  @include media() {
+    font-size: 15rem;
+  }
+}
+
+.form__confirm-message {
+  display: block;
+  margin-top: 120rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18rem;
+
+  @include media() {
+    font-size: 15rem;
+  }
+}
+
+.form__confirm-submit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30rem;
+  margin-top: 30rem;
+
+  @include media() {
+    gap: 20rem
+  }
+}
+
+.button--send {
+  @extend .button--primary;
+}
+
+.button--prev {
+  @extend .button--primary;
+
+  & {
+    border: 1px solid var(--colorKey);
+    background-color: #fff;
+    color: var(--colorKey);
+
+    a {
+      text-decoration: none;
+    }
+
+    &::after {
+      background-image: url(../image/arrow_button.svg);
+    }
+  }
+}
+
+
+// 完了
+.form__step.form__step-send {
+  @include media() {
+    margin: 0 auto;
+  }
+}
+
+.form__send-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 60rem;
+  color: #006eb8;
+  font-weight: 700;
+  font-size: 26rem;
+
+  @include media() {
+    margin-top: 40rem;
+    font-size: 20rem;
+  }
+
+  strong {
+    font-weight: inherit;
+  }
+}
+
+.form__send-copy {
+  text-align: center;
+  line-height: 2;
+
+  + .button--prev {
+    margin-top: 90rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include media() {
+      margin-top: 80rem;
+    }
+  }
+}
+
+
+// エラーメッセージ
+.wpcf7 form.invalid .wpcf7-response-output {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  color: #e53232;
+  font-size: 14rem;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  border: 0;
+}
+
+.wpcf7-spinner {
+  display: none !important;
 }

@@ -1,5 +1,21 @@
 @use '../../foundation/index' as *;
 
 .page404 {
-  //
+  .page404_title {
+    align-items: center;
+    flex-direction: column;
+
+    span {
+      display: block;
+      margin-top: 1em;
+      font-size: 13rem;
+    }
+  }
+  .page__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30rem;
+    margin-top: 80rem;
+  }
 }
