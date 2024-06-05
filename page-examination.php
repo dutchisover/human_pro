@@ -143,7 +143,7 @@
 					<div class="page-examination__step-arrow-content">
 						<p>申請フォームに必要項目を入力いただき申請してください。</p>
 						<div class="page-examination__button">
-							<a href="<?php home_url(); ?>/contact" class="button--primary">申請フォーム</a>
+							<a href="<?php home_url(); ?>/app" class="button--primary">申請フォーム</a>
 						</div>
 					</div>
 				</div>

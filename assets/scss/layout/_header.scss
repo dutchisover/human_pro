@@ -96,6 +96,10 @@
   &.is-current {
     color: var(--colorKey);
 
+    @include media() {
+      color: #fff;
+    }
+
     &::after {
       content: '';
       position: absolute;

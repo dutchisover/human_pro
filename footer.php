@@ -12,7 +12,7 @@
     		<div class="footer__nav">
     			<ul class="footer__nav-list">
     				<li class="footer__nav-item"><a href="<?php home_url(); ?>/examination">審査について</a></li>
-    				<li class="footer__nav-item"><a href="<?php home_url(); ?>admission/">入会案内</a></li>
+    				<li class="footer__nav-item"><a href="<?php home_url(); ?>/admission">入会案内</a></li>
     				<li class="footer__nav-item"><a href="<?php home_url(); ?>/authorize">認定一覧</a></li>
     				<li class="footer__nav-item"><a href="<?php home_url(); ?>/about">法人概要</a></li>
     				<li class="footer__nav-item"><a href="<?php home_url(); ?>/news">お知らせ</a></li>

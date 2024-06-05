@@ -145,6 +145,12 @@ document.addEventListener('DOMContentLoaded', function() {
     );
     const button = document.querySelector('.button--submit');
 
+    // ボタンが存在するか確認
+    if (!button) {
+      // console.error('Button with class .button--submit not found.');
+      return;
+    }
+
     // チェックされているチェックボックスが1つでもあるかどうかを確認
     const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
 
@@ -165,5 +171,61 @@ document.addEventListener('DOMContentLoaded', function() {
   );
   checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', updateButtonState);
+  });
+});
+
+////////////////// aタグのスムーズスクロール //////////////////
+document.addEventListener('DOMContentLoaded', () => {
+  const anchors = document.querySelectorAll('a[href^="#"]');
+  const duration = 400; // スクロールの到達時間をミリ秒で設定
+  const offset = '100rem'; // スクロール位置をトップから調整するオフセット値（単位付き）
+
+  const getOffsetInPixels = offset => {
+    const value = parseFloat(offset);
+    const unit = offset.match(/[a-zA-Z%]+$/);
+    if (!unit) return value;
+
+    switch (unit[0]) {
+      case 'rem':
+        return (
+          value *
+          parseFloat(getComputedStyle(document.documentElement).fontSize)
+        );
+      case 'em':
+        return value * parseFloat(getComputedStyle(document.body).fontSize);
+      case 'px':
+        return value;
+      case '%':
+        return value / 100 * window.innerHeight;
+      default:
+        return value;
+    }
+  };
+
+  const offsetInPixels = getOffsetInPixels(offset);
+
+  anchors.forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      const targetId = anchor.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        const startPosition = window.pageYOffset;
+        const targetPosition =
+          targetElement.getBoundingClientRect().top - offsetInPixels;
+        const startTime = performance.now();
+
+        const animateScroll = currentTime => {
+          const elapsedTime = currentTime - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+          window.scrollTo(0, startPosition + targetPosition * progress);
+          if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+          }
+        };
+
+        requestAnimationFrame(animateScroll);
+      }
+    });
   });
 });

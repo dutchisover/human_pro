@@ -198,6 +198,30 @@ textarea {
     @extend .button--primary
   }
 
+  & {
+    padding-left: 0;
+    cursor: pointer;
+    transition: .4s;
+
+    @include hover {
+      opacity: .7;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    input {
+      display: flex;
+      padding-left: 30rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   &.is-disabled {
     background-color: #cecece;
     cursor: not-allowed;
@@ -266,10 +290,58 @@ textarea {
 
 .button--send {
   @extend .button--primary;
+
+  & {
+    padding-left: 0;
+    cursor: pointer;
+    transition: .4s;
+
+    @include hover {
+      opacity: .7;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    input {
+      display: flex;
+      padding-left: 30rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .button--prev {
   @extend .button--primary;
+
+  & {
+    padding-left: 0;
+    cursor: pointer;
+    transition: .4s;
+
+    @include hover {
+      opacity: .7;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    input {
+      display: flex;
+      padding-left: 30rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   & {
     border: 1px solid var(--colorKey);
@@ -323,6 +395,24 @@ textarea {
 
     @include media() {
       margin-top: 80rem;
+    }
+
+    & {
+      padding-left: 0;
+      cursor: pointer;
+      transition: .4s;
+
+      @include hover {
+        opacity: .7;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        padding-left: 30rem;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
