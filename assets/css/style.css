@@ -2334,13 +2334,12 @@ iframe {
 .page__privacy .page__content {
   margin-top: 60rem;
 }
-.page__privacy .page__content *:first-child {
-  margin-top: 0;
-  margin-bottom: 60rem;
-}
 
 .page-privacy__desc {
   margin-top: 48rem;
+}
+.page-privacy__desc {
+  margin-bottom: 60rem;
 }
 
 .page-privacy__title {
@@ -4009,7 +4008,8 @@ iframe {
   iframe {
     height: 335rem;
   }
-  .page__privacy .page__content *:first-child {
+  .page-privacy__desc {
+    margin-top: 0;
     margin-bottom: 0;
   }
   .page-privacy__title {

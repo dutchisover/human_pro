@@ -1043,19 +1043,28 @@ iframe {
   .page__content {
     margin-top: 60rem;
 
-    *:first-child {
-      margin-top: 0;
-      margin-bottom: 60rem;
+    // *:first-child {
+    //   margin-top: 0;
+    //   margin-bottom: 60rem;
 
-      @include media() {
-        margin-bottom: 0;
-      }
-    }
+    //   @include media() {
+    //     margin-bottom: 0;
+    //   }
+    // }
   }
 }
 
 .page-privacy__desc {
   margin-top: 48rem;
+
+  & {
+    margin-bottom: 60rem;
+
+    @include media() {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .page-privacy__title {
