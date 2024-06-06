@@ -4,11 +4,11 @@
 	<section class="hero">
 		<div class="hero__inner">
 			<h1 class="hero__title">
-				<span class="fade-in-text hero__title-line-01" data-delay="0" data-speed="250">職業技能の</span><br>
-				<span class="fade-in-text hero__title-line-02" data-delay="500" data-speed="250">評価・承認を通して</span><br>
-				<span class="fade-in-text hero__title-line-03 sp-none" data-delay="1000" data-speed="250">豊かな社会を実現する。</span>
-				<span class="fade-in-text hero__title-line-03 pc-none" data-delay="1000" data-speed="250">豊かな社会を</span><br>
-				<span class="fade-in-text hero__title-line-04 pc-none" data-delay="1500" data-speed="250">実現する。</span>
+				<span class="fade-in-text hero__title-line-01" data-delay="0" data-speed="1500">職業技能の</span><br>
+				<span class="fade-in-text hero__title-line-02" data-delay="700" data-speed="1500">評価・承認を通して</span><br>
+				<span class="fade-in-text hero__title-line-03 sp-none" data-delay="1500" data-speed="1500">豊かな社会を実現する。</span>
+				<span class="fade-in-text hero__title-line-03 pc-none" data-delay="1500" data-speed="1500">豊かな社会を</span><br>
+				<span class="fade-in-text hero__title-line-04 pc-none" data-delay="2200" data-speed="1500">実現する。</span>
 			</h1>
 			<p class="hero__subtitle">Skill × Education = Enriched Society</p>
 			<div class="hero__button">

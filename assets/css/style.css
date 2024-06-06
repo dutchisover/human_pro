@@ -567,12 +567,12 @@ body.is-overflow {
   opacity: 0;
   -webkit-animation-name: opacity_mv-top;
           animation-name: opacity_mv-top;
-  -webkit-animation-duration: 0.25s;
-          animation-duration: 0.25s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 2.75s;
+          animation-delay: 2.75s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
@@ -585,12 +585,12 @@ body.is-overflow {
   opacity: 0;
   -webkit-animation-name: fade-up;
           animation-name: fade-up;
-  -webkit-animation-duration: 0.25s;
-          animation-duration: 0.25s;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
@@ -2723,8 +2723,7 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-  height: 1082rem;
+  height: 795rem;
   color: #fff;
 }
 .hero::before {
@@ -2735,9 +2734,9 @@ iframe {
   z-index: 0;
   display: block;
   width: 100%;
-  height: 100%;
-  background-image: url("../image/bg_mv-top.svg");
-  background-position: center;
+  height: 1275rem;
+  background-image: url("../image/bg_mv-top_3.svg");
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2759,7 +2758,7 @@ iframe {
   z-index: 1;
   width: 100%;
   height: 795rem;
-  background-image: url("../image/bg_mv-top.jpg");
+  background-image: url("../image/bg_mv-top_2.png");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2817,7 +2816,6 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   gap: 48rem;
-  margin-top: -287rem;
   padding-top: 214rem;
 }
 
@@ -3291,50 +3289,6 @@ iframe {
   }
 }
 @media (min-width: 1401px){
-  .hero {
-    height: auto;
-    aspect-ratio: 1400/1082;
-  }
-  .hero::before {
-    background-size: 100% 100%;
-  }
-  .hero__bg {
-    height: auto;
-    aspect-ratio: 1400/795;
-  }
-  .hero__bg::before {
-    height: 100%;
-    background-size: 100% 100%;
-  }
-  .hero__logo {
-    top: 13.7692307692vw;
-    right: 3.3076923077vw;
-    width: 82.8461538462vw;
-    height: 27.0784615385vw;
-    -webkit-transform: none;
-            transform: none;
-  }
-  .hero__logo img {
-    max-width: none;
-    width: 100%;
-    height: 100%;
-  }
-  .hero__inner {
-    margin-top: 17.6923076923vw;
-    padding-left: 9.2307692308vw;
-    width: 100%;
-    -webkit-transform: none;
-            transform: none;
-  }
-  .hero__title {
-    font-size: 3.2307692308vw;
-  }
-  .hero__subtitle {
-    font-size: 3.0769230769vw;
-  }
-  .news {
-    margin-top: -20.6vw;
-  }
   .news__line {
     height: auto;
     aspect-ratio: 1400/287;
@@ -3346,6 +3300,14 @@ iframe {
   }
   body {
     font-size: 15rem;
+  }
+  .hero__subtitle {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  .hero__button {
+    -webkit-animation-delay: 3.75s;
+            animation-delay: 3.75s;
   }
   *,
   *::before,

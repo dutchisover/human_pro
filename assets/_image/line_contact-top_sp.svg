@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="309" viewBox="0 0 375 309">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_566" data-name="長方形 566" width="375" height="309" transform="translate(0 661)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c6d1ea"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_552" data-name="長方形 552" width="375" height="363" fill="#b4b4b4"/>
+    </clipPath>
+  </defs>
+  <g id="マスクグループ_163" data-name="マスクグループ 163" transform="translate(0 -661)" clip-path="url(#clip-path)">
+    <rect id="長方形_283" data-name="長方形 283" width="2" height="2000" transform="matrix(0.174, -0.985, 0.985, 0.174, -1135.157, 529.704)" fill="url(#linear-gradient)"/>
+    <g id="マスクグループ_157" data-name="マスクグループ 157" transform="translate(444 928) rotate(180)" clip-path="url(#clip-path-2)">
+      <rect id="長方形_551" data-name="長方形 551" width="2" height="1500" transform="matrix(-0.602, -0.799, 0.799, -0.602, -782.796, 904.32)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const text = textElement.textContent;
       textElement.textContent = '';
       const startDelay = parseInt(textElement.dataset.delay) || 0;
-      const animationSpeed = parseInt(textElement.dataset.speed) || 500;
-      let delay = 0;
+      const animationSpeed = parseInt(textElement.dataset.speed) || 1000;
+      let delay = 100;
 
       setTimeout(() => {
         text.split('').forEach(char => {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             span.style.opacity = 1;
           }, delay);
 
-          delay += 60;
+          delay += 150;
         });
       }, startDelay);
     }

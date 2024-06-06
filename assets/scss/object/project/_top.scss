@@ -5,19 +5,19 @@
   position: relative;
   z-index: 1;
   display: flex;
-  overflow: hidden;
-  // height: 795rem;
-  height: 1082rem;
+  // overflow: hidden;
+  height: 795rem;
+  // height: 1082rem;
   // background-color: #184b97;
   color: #fff;
 
   @include media() {
     height: 700rem;
   }
-  @media (min-width: 1401px) {
-    height: auto;
-    aspect-ratio: 1400 / 1082;
-  }
+  // @media (min-width: 1401px) {
+  //   height: auto;
+  //   aspect-ratio: 1400 / 1082;
+  // }
 
   &::before {
     content: '';
@@ -27,11 +27,12 @@
     z-index: 0;
     display: block;
     width: 100%;
-    // height: 795rem;
-    height: 100%;
+    height: 1275rem;
+    // height: 100%;
     // background-color: #184b97;
-    background-image: url('../image/bg_mv-top.svg');
-    background-position: center;
+    // background-image: url("../image/bg_mv-top.svg");
+    background-image: url('../image/bg_mv-top_3.svg');
+    background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -40,9 +41,9 @@
       background-image: url('../image/bg_mv-top_sp.svg');
     }
 
-    @media (min-width: 1401px) {
-      background-size: 100% 100%;
-    }
+    // @media (min-width: 1401px) {
+    //   background-size: 100% 100%;
+    // }
   }
 }
 
@@ -56,10 +57,10 @@
   height: 795rem;
   // height: 1082rem;
 
-  @media (min-width: 1401px) {
-    height: auto;
-    aspect-ratio: 1400 / 795;
-  }
+  // @media (min-width: 1401px) {
+  //   height: auto;
+  //   aspect-ratio: 1400 / 795;
+  // }
 
   &::before {
     content: '';
@@ -70,7 +71,7 @@
     width: 100%;
     height: 795rem;
     // height: 1082rem;
-    background-image: url('../image/bg_mv-top.jpg');
+    background-image: url('../image/bg_mv-top_2.png');
     background-position: center top;
     // background-size: 1400rem 795rem;
     background-size: cover;
@@ -81,10 +82,10 @@
       background-image: url('../image/bg_mv-top_sp.jpg');
     }
 
-    @media (min-width: 1401px) {
-      height: 100%;
-      background-size: 100% 100%;
-    }
+    // @media (min-width: 1401px) {
+    //   height: 100%;
+    //   background-size: 100% 100%;
+    // }
   }
 }
 
@@ -112,19 +113,19 @@
     transform: none;
   }
 
-  @media (min-width: 1401px) {
-    top: vwp(179);
-    right: vwp(43);
-    width: vwp(1077);
-    height: vwp(352.02);
-    transform: none;
+  // @media (min-width: 1401px) {
+  //   top: vwp(179);
+  //   right: vwp(43);
+  //   width: vwp(1077);
+  //   height: vwp(352.02);
+  //   transform: none;
 
-    img {
-      max-width: none;
-      width: 100%;
-      height: 100%;
-    }
-  }
+  //   img {
+  //     max-width: none;
+  //     width: 100%;
+  //     height: 100%;
+  //   }
+  // }
 }
 
 .hero__inner {
@@ -141,12 +142,12 @@
     transform: none;
   }
 
-  @media (min-width: 1401px) {
-    margin-top: vwp(230);
-    padding-left: vwp(120);
-    width: 100%;
-    transform: none;
-  }
+  // @media (min-width: 1401px) {
+  //   margin-top: vwp(230);
+  //   padding-left: vwp(120);
+  //   width: 100%;
+  //   transform: none;
+  // }
 
   // & {
   //   opacity: 0;
@@ -164,9 +165,9 @@
     font-size: 28rem;
   }
 
-  @media (min-width: 1401px) {
-    font-size: vwp(42);
-  }
+  // @media (min-width: 1401px) {
+  //   font-size: vwp(42);
+  // }
 }
 
 .hero__subtitle {
@@ -180,9 +181,9 @@
     font-size: 20rem;
   }
 
-  @media (min-width: 1401px) {
-    font-size: vwp(40);
-  }
+  // @media (min-width: 1401px) {
+  //   font-size: vwp(40);
+  // }
 }
 
 .hero__button {
@@ -200,7 +201,6 @@
   }
 }
 
-
 // news
 .news {
   // padding-bottom: 130rem;
@@ -208,7 +208,7 @@
   z-index: 2;
   display: flex;
   gap: 48rem;
-  margin-top: -287rem;
+  // margin-top: -287rem;
   padding-top: 214rem;
 
   @extend %wrapper;
@@ -219,9 +219,9 @@
     padding: 124rem 20rem;
   }
 
-  @media (min-width: 1401px) {
-    margin-top: -20.6vw;
-  }
+  // @media (min-width: 1401px) {
+  //   margin-top: -20.6vw;
+  // }
 }
 
 .news__line {
@@ -304,7 +304,6 @@
 .news__text {
   // font-size: 1rem;
 }
-
 
 // about
 .about {
@@ -402,7 +401,6 @@
   }
 }
 
-
 // トップセクション
 .top-section {
   margin-top: 130rem;
@@ -448,7 +446,6 @@
     line-height: 2.13333333;
   }
 }
-
 
 // apply
 .apply {
@@ -529,7 +526,6 @@
   display: flex;
   justify-content: center;
 }
-
 
 // marks
 .mark {
@@ -670,7 +666,6 @@
   }
 }
 
-
 // member
 .member {
   display: flex;
@@ -769,7 +764,7 @@
   justify-content: center;
   width: 310rem !important;
   height: 124rem;
-  border-radius: 6rem ;
+  border-radius: 6rem;
 
   @include media() {
     width: 265rem !important;
@@ -795,7 +790,6 @@
     margin-top: 60rem;
   }
 }
-
 
 // contact
 .contact {

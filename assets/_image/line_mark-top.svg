@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400" height="638" viewBox="0 0 1400 638">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_573" data-name="長方形 573" width="1400" height="638" transform="translate(0 2899)" fill="#c6c6c6"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c6d1ea"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="マスクグループ_167" data-name="マスクグループ 167" transform="translate(0 -2899)" clip-path="url(#clip-path)">
+    <rect id="長方形_288" data-name="長方形 288" width="2" height="2000" transform="matrix(0.174, -0.985, 0.985, 0.174, -447.122, 3172.97)" fill="url(#linear-gradient)"/>
+    <rect id="長方形_568" data-name="長方形 568" width="2" height="1500" transform="matrix(0.602, 0.799, -0.799, 0.602, 1666.375, 2738)" opacity="0.6" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

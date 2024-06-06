@@ -55,26 +55,29 @@
 .hero__subtitle {
   opacity: 0;
   animation-name: opacity_mv-top;
-  animation-duration: .25s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  animation-delay: 2s;
+  animation-delay: 2.75s;
   animation-iteration-count: 1;
   animation-direction: alternate;
 
   animation-fill-mode: forwards;
-  // @include media() {
-  //   animation-delay: 2.4s;
-  // }
+  @include media() {
+    animation-delay: 3.00s;
+  }
 }
 
 .hero__button {
   opacity: 0;
   animation-name: fade-up;
-  animation-duration: .25s;
+  animation-duration: .4s;
   animation-timing-function: ease-in-out;
-  animation-delay: 2.5s;
+  animation-delay: 3.5s;
   animation-iteration-count: 1;
   animation-direction: alternate;
 
   animation-fill-mode: forwards;
+  @include media() {
+    animation-delay: 3.75s;
+  }
 }
