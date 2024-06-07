@@ -1860,8 +1860,7 @@ textarea.wpcf7-not-valid {
   width: 330rem;
   height: 330rem;
   background-color: #f0f7fc;
-  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
 .page-examination__standard-heading {
@@ -3120,14 +3119,13 @@ iframe {
   background: -webkit-gradient(linear, left top, left bottom, from(#164b99), to(#163c72));
   background: linear-gradient(180deg, #164b99 0%, #163c72 100%);
   background-color: #164b99;
-  -webkit-clip-path: polygon(0 240rem, 100% 0, 100% calc(100% - 240rem), 0 100%);
-          clip-path: polygon(0 240rem, 100% 0, 100% calc(100% - 240rem), 0 100%);
+  clip-path: polygon(0 240rem, 100% 0, 100% calc(100% - 240rem), 0 100%);
   color: #fff;
 }
 
 .member__inner {
   overflow: hidden;
-  padding: 90rem 0 60rem;
+  padding: 30rem 0 30rem;
   width: 100%;
 }
 
@@ -3151,6 +3149,17 @@ iframe {
   width: 70rem;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.member__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 24rem;
+  margin-bottom: 44rem;
 }
 
 .member__banner {
@@ -4325,18 +4334,22 @@ iframe {
     margin-top: 40rem;
     padding: 60rem 0;
     max-width: none;
-    -webkit-clip-path: polygon(0 60rem, 100% 0, 100% calc(100% - 60rem), 0 100%);
-            clip-path: polygon(0 60rem, 100% 0, 100% calc(100% - 60rem), 0 100%);
+    clip-path: polygon(0 60rem, 100% 0, 100% calc(100% - 60rem), 0 100%);
   }
   .member__inner {
-    padding: 48rem 0 60rem;
+    padding: 24rem 0 60rem;
   }
   .member__title {
     gap: 15rem;
+    margin-bottom: 0.5em;
     font-size: 18rem;
   }
   .member__title::before, .member__title::after {
     width: 50rem;
+  }
+  .member__subtitle {
+    margin-top: 10rem;
+    margin-bottom: 24rem;
   }
   .member__banner {
     -webkit-box-align: center;
@@ -4346,9 +4359,11 @@ iframe {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 24rem;
+    margin-bottom: 0;
   }
   .member__banner-item {
-    width: 240rem;
+    width: 220rem;
   }
   .member__list {
     margin-bottom: 46rem;
@@ -4361,7 +4376,7 @@ iframe {
     width: 240rem;
   }
   .member__button {
-    margin-top: 60rem;
+    margin-top: 40rem;
   }
   .contact {
     padding: 100rem 20rem 0;

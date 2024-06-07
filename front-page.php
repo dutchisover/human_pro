@@ -169,6 +169,7 @@
 		<div class="member">
 			<div class="member__inner">
 				<h3 class="member__title">PRO認定</h3>
+				<p class="member__subtitle">質の高い教育を提供している<br class="pc-none">団体として認められました。</p>
 
 				<div class="member__banner">
 					<div class="member__banner-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/banner_member_02.png" alt="会員ロゴ1"></div>
