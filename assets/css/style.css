@@ -567,12 +567,12 @@ body.is-overflow {
   opacity: 0;
   -webkit-animation-name: opacity_mv-top;
           animation-name: opacity_mv-top;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 2.75s;
-          animation-delay: 2.75s;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
@@ -589,8 +589,8 @@ body.is-overflow {
           animation-duration: 0.4s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
@@ -3302,8 +3302,8 @@ iframe {
     font-size: 15rem;
   }
   .hero__subtitle {
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 3.25s;
+            animation-delay: 3.25s;
   }
   .hero__button {
     -webkit-animation-delay: 3.75s;

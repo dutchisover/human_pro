@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             span.style.opacity = 1;
           }, delay);
 
-          delay += 150;
+          delay += 120;
         });
       }, startDelay);
     }

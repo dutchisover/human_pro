@@ -55,15 +55,15 @@
 .hero__subtitle {
   opacity: 0;
   animation-name: opacity_mv-top;
-  animation-duration: 1s;
+  animation-duration: .5s;
   animation-timing-function: ease-in-out;
-  animation-delay: 2.75s;
+  animation-delay: 2.8s;
   animation-iteration-count: 1;
   animation-direction: alternate;
 
   animation-fill-mode: forwards;
   @include media() {
-    animation-delay: 3.00s;
+    animation-delay: 3.25s;
   }
 }
 
@@ -72,7 +72,7 @@
   animation-name: fade-up;
   animation-duration: .4s;
   animation-timing-function: ease-in-out;
-  animation-delay: 3.5s;
+  animation-delay: 3.4s;
   animation-iteration-count: 1;
   animation-direction: alternate;
 

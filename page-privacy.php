@@ -38,7 +38,7 @@
 
 		<div class="page-privacy__signature">
 			<p>職業技能専門教育研究機構</p>
-			<p>理事長　今里 健治</p>
+			<p>理事長　佐藤　千佳子</p>
 		</div>
 
 		<p class="page-privacy__revision-date">[最終改訂日：2024年4月1日]</p>
@@ -46,7 +46,7 @@
 		<div class="page-privacy__contact-info">
 			<h3 class="page-privacy__info-heading">【個人情報に関するお問い合わせ先】</h3>
 			<p>職業技能専門教育研究機構　事務局</p>
-			<p>Eメール　<a href="mailto:info@inyo-shikaku.jp" class="page-privacy__email">info@inyo-shikaku.jp</a></p>
+			<p>Eメール　<a href="mailto:info@careerskill.or.jp" class="page-privacy__email">info@careerskill.or.jp</a></p>
 		</div>
 	</div>
 	<!-- /.page-content -->

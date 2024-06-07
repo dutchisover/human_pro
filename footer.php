@@ -6,7 +6,7 @@
     					<img src="<?php echo get_template_directory_uri(); ?>/assets/image/logo_footer.svg" alt="PRO" width="480" height="53">
     				</a>
     			</div>
-    			<address class="footer__address">特定非営利活動法人　<br class="pc-none">職業技能専門教育研究機構（PRO）<br class="pc-none"><br>〒160-0023 東京都新宿区西新宿7-8-10 <br class="pc-none">オークラヤビル4F</address>
+    			<address class="footer__address">特定非営利活動法人　<br class="">職業技能専門教育研究機構（PRO）<?php /*<br class="pc-none"><br>〒160-0023 東京都新宿区西新宿7-8-10 <br class="pc-none">オークラヤビル4F */ ?></address>
     		</div>
 
     		<div class="footer__nav">
@@ -25,7 +25,7 @@
     		</div>
 
     		<div class="footer__bottom">
-    			<small class="footer__copyright">© 2024 Human Academy Co., Ltd. All Rights Reserved.</small>
+    			<small class="footer__copyright">© 2024 Professional training Research Organization of occupational skill All Rights Reserved.</small>
 
     			<div class="footer__bottom-nav">
     				<ul class="footer__bottom-nav-list">
